@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
-import Cursor from '../components/cursor';
-import ScrollToTop from '../components/scrollToTop';
-import LoadingScreen from '../components/Loading-Screen';
-import '../styles/main.scss';
+import Cursor from '../src/components/cursor';
+import ScrollToTop from '../src/components/scrollToTop';
+import LoadingScreen from '../src/components/Loading-Screen';
+import '../src/styles/main.scss';
 
 function MyApp({ Component, pageProps }) {
   return (

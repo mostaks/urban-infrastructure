@@ -1,9 +1,9 @@
 import React from 'react';
-import LightTheme from '../../layouts/Light';
-import Navbar from '../../components/Navbar/navbar';
-import Footer from '../../components/Footer/footer';
-import WorksHeader from '../../components/Works-header/works-header';
-import WorksStyle1 from '../../components/Works-style1/works-style1';
+import LightTheme from '../../src/layouts/Light';
+import Navbar from '../../src/components/Navbar/navbar';
+import Footer from '../../src/components/Footer/footer';
+import WorksHeader from '../../src/components/Works-header/works-header';
+import WorksStyle1 from '../../src/components/Works-style1/works-style1';
 
 const WorksLight = () => {
   const fixedHeader = React.useRef(null);

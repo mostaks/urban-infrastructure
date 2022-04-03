@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import React from 'react';
-import Navbar from '../../components/Navbar/navbar';
-import Footer from '../../components/Footer/footer';
-import LightTheme from '../../layouts/Light';
-import ContactHeader from '../../components/Contact-header/contact-header';
-import ContactForm from '../../components/Contact-form/contact-form';
+import Navbar from '../../src/components/Navbar/navbar';
+import Footer from '../../src/components/Footer/footer';
+import LightTheme from '../../src/layouts/Light';
+import ContactHeader from '../../src/components/Contact-header/contact-header';
+import ContactForm from '../../src/components/Contact-form/contact-form';
 
 const Contact = () => {
   const navbarRef = React.useRef(null);

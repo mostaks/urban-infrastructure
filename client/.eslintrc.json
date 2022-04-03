@@ -1,3 +1,0 @@
-{
-  "extends": ["airbnb", "next/babel", "next", "prettier"]
-}
