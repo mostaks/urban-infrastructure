@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import cardMouseEffect from "../../common/cardMouseEffect";
+import React from 'react';
+import Link from 'next/link';
+import cardMouseEffect from '../../common/cardMouseEffect';
 
 const Services3 = () => {
   React.useEffect(() => {
-    cardMouseEffect(document.querySelectorAll(".feat .items"));
+    cardMouseEffect(document.querySelectorAll('.feat .items'));
   }, []);
   return (
     <section className="feat sub-bg section-padding">
@@ -25,7 +25,7 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items md-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-ios-monitor"></i>
+                <i className="ion-ios-monitor" />
               </span>
               <h5>Interface Design</h5>
               <p>
@@ -34,7 +34,7 @@ const Services3 = () => {
               </p>
               <Link href="/about/about-dark">
                 <a className="more-stroke">
-                  <span></span>
+                  <span />
                 </a>
               </Link>
             </div>
@@ -42,7 +42,7 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items active md-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-ios-bolt-outline"></i>
+                <i className="ion-ios-bolt-outline" />
               </span>
               <h5>Creative Always</h5>
               <p>
@@ -51,7 +51,7 @@ const Services3 = () => {
               </p>
               <Link href="/about/about-dark">
                 <a className="more-stroke">
-                  <span></span>
+                  <span />
                 </a>
               </Link>
             </div>
@@ -59,7 +59,7 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items sm-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-cube"></i>
+                <i className="ion-cube" />
               </span>
               <h5>Real-time Editing</h5>
               <p>
@@ -68,7 +68,7 @@ const Services3 = () => {
               </p>
               <Link href="/about/about-dark">
                 <a className="more-stroke">
-                  <span></span>
+                  <span />
                 </a>
               </Link>
             </div>
@@ -76,7 +76,7 @@ const Services3 = () => {
           <div className="col-lg-3 col-md-6 items">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
-                <i className="ion-ios-color-wand"></i>
+                <i className="ion-ios-color-wand" />
               </span>
               <h5>Art Concept</h5>
               <p>
@@ -85,7 +85,7 @@ const Services3 = () => {
               </p>
               <Link href="/about/about-dark">
                 <a className="more-stroke">
-                  <span></span>
+                  <span />
                 </a>
               </Link>
             </div>

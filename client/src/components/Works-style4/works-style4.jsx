@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Link from "next/link";
-import initIsotope from "../../common/initIsotope";
+import React from 'react';
+import Link from 'next/link';
+import initIsotope from '../../common/initIsotope';
 
 const WorksStyle4 = () => {
   React.useEffect(() => {
@@ -19,7 +19,11 @@ const WorksStyle4 = () => {
                 Portfolio
               </h6>
               <h3 className="wow color-font">
-                Our Recent Web Design & <br /> Some Past Projects.
+                Our Recent Web Design &
+                {' '}
+                <br />
+                {' '}
+                Some Past Projects.
               </h3>
             </div>
           </div>
@@ -48,10 +52,10 @@ const WorksStyle4 = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="rota">
                     <img src="/img/portfolio/freelancer/1.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
                 <div className="tags">
@@ -77,10 +81,10 @@ const WorksStyle4 = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="rota">
                     <img src="/img/portfolio/freelancer/2.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
                 <div className="tags">
@@ -106,10 +110,10 @@ const WorksStyle4 = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="rota">
                     <img src="/img/portfolio/freelancer/3.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
                 <div className="tags">
@@ -135,10 +139,10 @@ const WorksStyle4 = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="rota">
                     <img src="/img/portfolio/freelancer/4.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
                 <div className="tags">
@@ -164,10 +168,10 @@ const WorksStyle4 = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="rota">
                     <img src="/img/portfolio/freelancer/5.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
                 <div className="tags">
@@ -193,10 +197,10 @@ const WorksStyle4 = () => {
                   <h6>Creative Mobile App</h6>
                   <p>Ui / Ux creative mobile app design</p>
                 </div>
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="rota">
                     <img src="/img/portfolio/freelancer/6.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
                 <div className="tags">

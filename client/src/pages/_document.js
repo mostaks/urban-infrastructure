@@ -1,4 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, {
+  Html, Head, Main, NextScript,
+} from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -22,7 +24,10 @@ class MyDocument extends Document {
             content="Urban Infrastructure pty ltd Australian Civil Construction Company"
           />
           <meta name="author" content="" />
-          <link rel="shortcut icon" href="/img/urban-infra-assets/ui-favicon.png" />
+          <link
+            rel="shortcut icon"
+            href="/img/urban-infra-assets/ui-favicon.png"
+          />
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
             rel="stylesheet"

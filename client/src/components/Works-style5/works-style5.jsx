@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Link from "next/link";
-import initIsotope from "../../common/initIsotope";
+import React from 'react';
+import Link from 'next/link';
+import initIsotope from '../../common/initIsotope';
 
 const WorksStyle5 = () => {
   React.useEffect(() => {
@@ -41,17 +41,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/arch/work/1.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h5>BUGANVILLA HOUSE</h5>
                 <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
+                  <Link href="/works/works-dark">Arch</Link>
+                  ,
                   <Link href="/works/works-dark">Interior</Link>
                 </span>
               </div>
@@ -62,17 +63,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/arch/work/2.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h5>The Concept</h5>
                 <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
+                  <Link href="/works/works-dark">Arch</Link>
+                  ,
                   <Link href="/works/works-dark">Interior</Link>
                 </span>
               </div>
@@ -83,17 +85,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/arch/work/5.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h5>Private House</h5>
                 <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
+                  <Link href="/works/works-dark">Arch</Link>
+                  ,
                   <Link href="/works/works-dark">Interior</Link>
                 </span>
               </div>
@@ -104,17 +107,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/arch/work/3.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h5>Floating House Messinia</h5>
                 <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
+                  <Link href="/works/works-dark">Arch</Link>
+                  ,
                   <Link href="/works/works-dark">Interior</Link>
                 </span>
               </div>
@@ -125,17 +129,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/arch/work/4.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h5>IN THE PINE FOREST</h5>
                 <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
+                  <Link href="/works/works-dark">Arch</Link>
+                  ,
                   <Link href="/works/works-dark">Interior</Link>
                 </span>
               </div>
@@ -146,17 +151,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/arch/work/6.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont">
                 <h5>VILLAS IN SOCHI</h5>
                 <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
+                  <Link href="/works/works-dark">Arch</Link>
+                  ,
                   <Link href="/works/works-dark">Interior</Link>
                 </span>
               </div>

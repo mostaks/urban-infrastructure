@@ -1,47 +1,48 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 class FullTestimonials extends React.Component {
   constructor(props) {
     super(props);
   }
-  renderArrows = () => {
-    return (
-      <div className="arrows">
-        <div className="container">
-          <div
-            onClick={() => this.slider.slickNext()}
-            className="next cursor-pointer"
-          >
-            <span className="pe-7s-angle-right"></span>
-          </div>
-          <div
-            onClick={() => this.slider.slickPrev()}
-            className="prev cursor-pointer"
-          >
-            <span className="pe-7s-angle-left"></span>
-          </div>
+
+  renderArrows = () => (
+    <div className="arrows">
+      <div className="container">
+        <div
+          onClick={() => this.slider.slickNext()}
+          className="next cursor-pointer"
+        >
+          <span className="pe-7s-angle-right" />
+        </div>
+        <div
+          onClick={() => this.slider.slickPrev()}
+          className="prev cursor-pointer"
+        >
+          <span className="pe-7s-angle-left" />
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+
   render() {
     return (
       <section
         className={`testimonials ${
           this.props.withIMG
-            ? "section-padding bg-img"
+            ? 'section-padding bg-img'
             : this.props.withCOLOR
-            ? "section-padding back-color"
-            : this.props.noPadding ? ""
-            : "section-padding"
-        } ${this.props.classText ? this.props.classText : ""}`}
+              ? 'section-padding back-color'
+              : this.props.noPadding
+                ? ''
+                : 'section-padding'
+        } ${this.props.classText ? this.props.classText : ''}`}
         style={{
           backgroundImage: `${
-            this.props.withIMG ? "url(/img/testim-img.jpg)" : "none"
+            this.props.withIMG ? 'url(/img/testim-img.jpg)' : 'none'
           }`,
         }}
       >

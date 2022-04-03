@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Split extends React.Component {
   target = React.createRef();
@@ -10,6 +10,7 @@ class Split extends React.Component {
   };
 
   componentDidMount = this.split;
+
   componentDidUpdate = this.split;
 
   render() {

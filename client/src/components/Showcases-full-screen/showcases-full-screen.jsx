@@ -1,26 +1,26 @@
-import React from "react";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ShowcassesFullScreenData from "../../data/showcases-full-screen-slider.json";
+import React from 'react';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
   Navigation,
   Pagination,
   Parallax,
   Mousewheel,
-} from "swiper";
+} from 'swiper';
+import ShowcassesFullScreenData from '../../data/showcases-full-screen-slider.json';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/mousewheel";
-import removeSlashFromPagination from "../../common/removeSlashpagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/mousewheel';
+import removeSlashFromPagination from '../../common/removeSlashpagination';
 
 SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
 const ShowcasesFullScreen = () => {
   const [load, setLoad] = React.useState(true);
   React.useEffect(() => {
-    removeSlashFromPagination()
+    removeSlashFromPagination();
     setTimeout(() => {
       setLoad(false);
     });
@@ -35,8 +35,8 @@ const ShowcasesFullScreen = () => {
         {!load ? (
           <Swiper
             speed={1000}
-            mousewheel={true}
-            parallax={true}
+            mousewheel
+            parallax
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,
@@ -52,10 +52,10 @@ const ShowcasesFullScreen = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
+                for (let i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
+                    'data-swiper-parallax',
+                    0.75 * swiper.width,
                   );
                 }
 
@@ -88,9 +88,7 @@ const ShowcasesFullScreen = () => {
                       <div className="col-lg-12">
                         <div className="caption">
                           <h1>
-                            <Link
-                              href={`/project-details2/project-details2-light`}
-                            >
+                            <Link href="/project-details2/project-details2-light">
                               <a>
                                 <div
                                   className="stroke"
@@ -103,15 +101,17 @@ const ShowcasesFullScreen = () => {
                                 </span>
                               </a>
                             </Link>
-                            <div className="bord"></div>
+                            <div className="bord" />
                           </h1>
                           <div className="discover">
-                            <Link
-                              href={`/works/works-light`}
-                            >
+                            <Link href="/works/works-light">
                               <a>
                                 <span>
-                                  Explore <br /> More
+                                  Explore
+                                  {' '}
+                                  <br />
+                                  {' '}
+                                  More
                                 </span>
                               </a>
                             </Link>
@@ -136,7 +136,7 @@ const ShowcasesFullScreen = () => {
             <span>Next Slide</span>
           </div>
           <div>
-            <i className="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right" />
           </div>
         </div>
         <div
@@ -144,14 +144,14 @@ const ShowcasesFullScreen = () => {
           className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
         >
           <div>
-            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left" />
           </div>
           <div>
             <span>Prev Slide</span>
           </div>
         </div>
 
-        <div className="swiper-pagination dots" ref={paginationRef}></div>
+        <div className="swiper-pagination dots" ref={paginationRef} />
       </div>
     </header>
   );

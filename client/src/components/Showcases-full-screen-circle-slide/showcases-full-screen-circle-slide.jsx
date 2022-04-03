@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ShowcassesFullScreenData from "../../data/showcases-full-screen-slider.json";
-import SwiperCore, { Navigation, Parallax, Mousewheel } from "swiper";
+import React from 'react';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Parallax, Mousewheel } from 'swiper';
+import ShowcassesFullScreenData from '../../data/showcases-full-screen-slider.json';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/mousewheel";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/mousewheel';
 
 SwiperCore.use([Navigation, Parallax, Mousewheel]);
 
@@ -26,9 +26,9 @@ const ShowcasesFullScreenCircleSlide = () => {
         {!load ? (
           <Swiper
             speed={1000}
-            mousewheel={true}
-            parallax={true}
-            centeredSlides={true}
+            mousewheel
+            parallax
+            centeredSlides
             slidesPerView={1}
             autoplay={{
               delay: 2500,
@@ -45,10 +45,10 @@ const ShowcasesFullScreenCircleSlide = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
+                for (let i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
+                    'data-swiper-parallax',
+                    0.75 * swiper.width,
                   );
                 }
 
@@ -87,9 +87,7 @@ const ShowcasesFullScreenCircleSlide = () => {
                     <div className="caption ontop valign">
                       <div className="o-hidden">
                         <h1 data-swiper-parallax="-2000">
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             <a>
                               <div className="stroke">{slide.title.first}</div>
                               <span>{slide.title.second}</span>
@@ -101,9 +99,7 @@ const ShowcasesFullScreenCircleSlide = () => {
                     <div className="copy-cap valign">
                       <div className="cap">
                         <h1 data-swiper-parallax="-2000">
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             <a>
                               <div className="stroke">{slide.title.first}</div>
                               <span>{slide.title.second}</span>
@@ -129,7 +125,7 @@ const ShowcasesFullScreenCircleSlide = () => {
             <span>Next Slide</span>
           </div>
           <div>
-            <i className="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right" />
           </div>
         </div>
         <div
@@ -137,7 +133,7 @@ const ShowcasesFullScreenCircleSlide = () => {
           className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
         >
           <div>
-            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left" />
           </div>
           <div>
             <span>Prev Slide</span>

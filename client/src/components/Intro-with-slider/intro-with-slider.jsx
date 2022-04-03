@@ -1,22 +1,22 @@
-import React from "react";
-import Link from "next/link";
-import introData from "../../data/sections/intro.json";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import SwiperCore, { Navigation, Pagination, Parallax } from 'swiper';
+import introData from '../../data/sections/intro.json';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import removeSlashFromPagination from "../../common/removeSlashpagination";
-import fadeWhenScroll from "../../common/fadeWhenScroll";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import removeSlashFromPagination from '../../common/removeSlashpagination';
+import fadeWhenScroll from '../../common/fadeWhenScroll';
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const IntroWithSlider = ({ sliderRef }) => {
   const [load, setLoad] = React.useState(true);
   React.useEffect(() => {
-    fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
+    fadeWhenScroll(document.querySelectorAll('.fixed-slider .caption'));
     setTimeout(() => {
       removeSlashFromPagination();
       setLoad(false);
@@ -36,13 +36,13 @@ const IntroWithSlider = ({ sliderRef }) => {
         {!load ? (
           <Swiper
             speed={1000}
-            parallax={true}
+            parallax
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,
             }}
             pagination={{
-              type: "fraction",
+              type: 'fraction',
               clickable: true,
               el: paginationRef.current,
             }}
@@ -53,10 +53,10 @@ const IntroWithSlider = ({ sliderRef }) => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
+                for (let i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
+                    'data-swiper-parallax',
+                    0.75 * swiper.width,
                   );
                 }
 
@@ -109,29 +109,29 @@ const IntroWithSlider = ({ sliderRef }) => {
             ref={navigationNextRef}
             className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
           >
-            <i className="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right" />
           </div>
           <div
             ref={navigationPrevRef}
             className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
           >
-            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left" />
           </div>
         </div>
-        <div ref={paginationRef} className="swiper-pagination top botm"></div>
+        <div ref={paginationRef} className="swiper-pagination top botm" />
 
         <div className="social-icon">
           <a href="#0">
-            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-facebook-f" />
           </a>
           <a href="#0">
-            <i className="fab fa-twitter"></i>
+            <i className="fab fa-twitter" />
           </a>
           <a href="#0">
-            <i className="fab fa-behance"></i>
+            <i className="fab fa-behance" />
           </a>
           <a href="#0">
-            <i className="fab fa-pinterest-p"></i>
+            <i className="fab fa-pinterest-p" />
           </a>
         </div>
       </div>

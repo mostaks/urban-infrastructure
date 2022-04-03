@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import works from '../../data/sections/works-all.json';
-import tooltipEffect from "../../common/tooltipEffect";
+import tooltipEffect from '../../common/tooltipEffect';
 
 const WorksStyle1 = () => {
   React.useEffect(() => {
@@ -10,7 +10,7 @@ const WorksStyle1 = () => {
   }, []);
   return (
     <section className="works section-padding pb-70">
-      <h2 style={{display: 'none'}}>&nbsp;</h2>
+      <h2 style={{ display: 'none' }}>&nbsp;</h2>
       <div className="container">
         <div className="row lg-space">
           {works.map((work) => (

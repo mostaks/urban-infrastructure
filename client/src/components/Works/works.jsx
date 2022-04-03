@@ -1,12 +1,13 @@
-import React from "react";
-import worksData from "../../data/sections/works.json";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
-import Link from "next/link";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
+import Link from 'next/link';
+import worksData from '../../data/sections/works.json';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Works = () => {
@@ -21,9 +22,8 @@ const Works = () => {
               <Swiper
                 className="swiper-wrapper"
                 slidesPerView={2}
-                centeredSlides={true}
-
-                loop={true}
+                centeredSlides
+                loop
                 navigation={{
                   prevEl: navigationPrevRef.current,
                   nextEl: navigationNextRef.current,
@@ -77,15 +77,13 @@ const Works = () => {
                         style={{
                           backgroundImage: `url(${slide.image})`,
                         }}
-                      ></div>
+                      />
                       <div className="cont">
                         <h6 className="color-font">
                           <a href="#0">{slide.title}</a>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-light`}
-                          >
+                          <Link href="/project-details2/project-details2-light">
                             {slide.secTex}
                           </Link>
                         </h4>

@@ -1,17 +1,18 @@
-import React from "react";
-import Link from "next/link";
-import intro5Data from "../../data/sections/intro5.json";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import removeSlashFromPagination from "../../common/removeSlashpagination";
+import React from 'react';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Parallax } from 'swiper';
+import intro5Data from '../../data/sections/intro5.json';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import removeSlashFromPagination from '../../common/removeSlashpagination';
+
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const Intro5 = () => {
   const [load, setLoad] = React.useState(true);
   React.useEffect(() => {
-    removeSlashFromPagination()
+    removeSlashFromPagination();
     setTimeout(() => {
       setLoad(false);
     });
@@ -27,7 +28,7 @@ const Intro5 = () => {
         {!load ? (
           <Swiper
             speed={1000}
-            parallax={true}
+            parallax
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,
@@ -43,10 +44,10 @@ const Intro5 = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
+                for (let i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
+                    'data-swiper-parallax',
+                    0.75 * swiper.width,
                   );
                 }
 
@@ -78,11 +79,20 @@ const Intro5 = () => {
                     <div className="row">
                       <div className="col-lg-6">
                         <div className="caption mt-30">
-                          <h5>0{index + 1} .</h5>
+                          <h5>
+                            0
+                            {index + 1}
+                            {' '}
+                            .
+                          </h5>
                           <h1>
-                            {typeof slide.title === "object" ? (
+                            {typeof slide.title === 'object' ? (
                               <>
-                                {slide.title.first} <br /> {slide.title.second}
+                                {slide.title.first}
+                                {' '}
+                                <br />
+                                {' '}
+                                {slide.title.second}
                               </>
                             ) : (
                               slide.title
@@ -93,11 +103,11 @@ const Intro5 = () => {
                       </div>
                       <div className="col-lg-4 valign">
                         <div className="explore">
-                          <Link href="/project-details2/project-details2-dark"> 
-                          <a >
-                            Explore Project
-                            <i className="ion-chevron-right"></i>
-                          </a>
+                          <Link href="/project-details2/project-details2-dark">
+                            <a>
+                              Explore Project
+                              <i className="ion-chevron-right" />
+                            </a>
                           </Link>
                         </div>
                       </div>
@@ -114,16 +124,16 @@ const Intro5 = () => {
               ref={navigationNextRef}
               className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
             >
-              <i className="ion-chevron-right"></i>
+              <i className="ion-chevron-right" />
             </div>
             <div
               ref={navigationPrevRef}
               className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
             >
-              <i className="ion-chevron-left"></i>
+              <i className="ion-chevron-left" />
             </div>
           </div>
-          <div ref={paginationRef} className="swiper-pagination"></div>
+          <div ref={paginationRef} className="swiper-pagination" />
         </div>
       </div>
     </header>

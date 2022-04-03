@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import ModalVideo from 'react-modal-video';
+import 'react-modal-video/css/modal-video.css';
 
 const VideoWithTestimonials = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -23,7 +23,10 @@ const VideoWithTestimonials = () => {
     <section className="block-sec">
       <div
         className="background bg-img pt-100 pb-0 parallaxie"
-        style={{ backgroundImage: `url(/img/urban-infra-assets/randwick-racecourse-atc/2.jpg)` }}
+        style={{
+          backgroundImage:
+            'url(/img/urban-infra-assets/randwick-racecourse-atc/2.jpg)',
+        }}
         data-overlay-dark="5"
       >
         <div className="container">
@@ -32,7 +35,7 @@ const VideoWithTestimonials = () => {
               <div className="vid-area">
                 <span className="text">Watch Video</span>
                 <div className="vid-icon">
-                  {typeof window !== "undefined" && (
+                  {typeof window !== 'undefined' && (
                     <ModalVideo
                       channel="custom"
                       isOpen={isOpen}
@@ -49,7 +52,7 @@ const VideoWithTestimonials = () => {
                   >
                     <div className="vid-butn">
                       <span className="icon">
-                        <i className="fas fa-play"></i>
+                        <i className="fas fa-play" />
                       </span>
                     </div>
                   </a>

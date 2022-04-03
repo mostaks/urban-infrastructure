@@ -1,37 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 class TestimonialsArch extends React.Component {
   constructor(props) {
     super(props);
   }
-  renderArrows = () => {
-    return (
-      <div className="arrows">
-        <div className="container">
-          <div
-            onClick={() => this.slider.slickNext()}
-            className="next cursor-pointer"
-          >
-            <span className="pe-7s-angle-right"></span>
-          </div>
-          <div
-            onClick={() => this.slider.slickPrev()}
-            className="prev cursor-pointer"
-          >
-            <span className="pe-7s-angle-left"></span>
-          </div>
+
+  renderArrows = () => (
+    <div className="arrows">
+      <div className="container">
+        <div
+          onClick={() => this.slider.slickNext()}
+          className="next cursor-pointer"
+        >
+          <span className="pe-7s-angle-right" />
+        </div>
+        <div
+          onClick={() => this.slider.slickPrev()}
+          className="prev cursor-pointer"
+        >
+          <span className="pe-7s-angle-left" />
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+
   render() {
     return (
       <section
-      id="testimonials-arch"
+        id="testimonials-arch"
         className="testimonials section-padding position-re"
       >
         <div className="container">
@@ -187,8 +187,8 @@ class TestimonialsArch extends React.Component {
           </div>
           {this.renderArrows()}
         </div>
-        <div className="line-v top"></div>
-        <div className="line-v bottom"></div>
+        <div className="line-v top" />
+        <div className="line-v bottom" />
       </section>
     );
   }

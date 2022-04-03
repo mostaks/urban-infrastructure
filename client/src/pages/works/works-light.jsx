@@ -1,9 +1,9 @@
-import React from "react";
-import LightTheme from "../../layouts/Light";
-import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
-import WorksHeader from "../../components/Works-header/works-header";
-import WorksStyle1 from "../../components/Works-style1/works-style1";
+import React from 'react';
+import LightTheme from '../../layouts/Light';
+import Navbar from '../../components/Navbar/navbar';
+import Footer from '../../components/Footer/footer';
+import WorksHeader from '../../components/Works-header/works-header';
+import WorksStyle1 from '../../components/Works-style1/works-style1';
 
 const WorksLight = () => {
   const fixedHeader = React.useRef(null);
@@ -17,20 +17,20 @@ const WorksLight = () => {
         var slidHeight = fixedHeader.current.offsetHeight;
       }
       if (MainContent.current) {
-        MainContent.current.style.marginTop = slidHeight + "px";
+        MainContent.current.style.marginTop = `${slidHeight}px`;
       }
     }, 1000);
-    var navbar = navbarRef.current;
+    const navbar = navbarRef.current;
     if (window.pageYOffset > 300) {
-      navbar.classList.add("nav-scroll");
+      navbar.classList.add('nav-scroll');
     } else {
-      navbar.classList.remove("nav-scroll");
+      navbar.classList.remove('nav-scroll');
     }
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.pageYOffset > 300) {
-        navbar.classList.add("nav-scroll");
+        navbar.classList.add('nav-scroll');
       } else {
-        navbar.classList.remove("nav-scroll");
+        navbar.classList.remove('nav-scroll');
       }
     });
   }, [fixedHeader, MainContent, navbarRef]);
@@ -39,12 +39,12 @@ const WorksLight = () => {
     <LightTheme>
       <div className="circle-bg">
         <div className="circle-color fixed">
-          <div className="gradient-circle"></div>
-          <div className="gradient-circle two"></div>
+          <div className="gradient-circle" />
+          <div className="gradient-circle two" />
         </div>
       </div>
       <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
-        <WorksHeader sliderRef={fixedHeader} />
+      <WorksHeader sliderRef={fixedHeader} />
       <div ref={MainContent} className="main-content">
         <WorksStyle1 />
         <Footer />

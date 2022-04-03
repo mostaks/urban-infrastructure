@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Split from "../Split";
-import Link from "next/link";
-import AboutUs3date from "../../data/sections/about-us3.json";
-import { thumparallax, thumparallaxDown } from "../../common/thumparallax";
+import React from 'react';
+import Link from 'next/link';
+import Split from '../Split';
+import AboutUs3date from '../../data/sections/about-us3.json';
+import { thumparallax, thumparallaxDown } from '../../common/thumparallax';
 
 const AboutUs3 = () => {
   React.useEffect(() => {
@@ -58,16 +58,22 @@ const AboutUs3 = () => {
             <div className="content">
               <Split>
                 <h4 className="wow words chars splitting" data-splitting>
-                  {AboutUs3date.title.first} <br /> {AboutUs3date.title.second}
+                  {AboutUs3date.title.first}
+                  {' '}
+                  <br />
+                  {' '}
+                  {AboutUs3date.title.second}
                 </h4>
               </Split>
               <Split>
                 <p className="wow txt words chars splitting" data-splitting>
-                  {AboutUs3date.content.first} <br />
+                  {AboutUs3date.content.first}
+                  {' '}
+                  <br />
                   {AboutUs3date.content.second}
                 </p>
               </Split>
-              <Link href={`/about/about-dark`}>
+              <Link href="/about/about-dark">
                 <a
                   className="butn bord curve mt-40 wow fadeInUp"
                   data-wow-delay=".8s"
@@ -80,7 +86,7 @@ const AboutUs3 = () => {
           </div>
         </div>
       </div>
-      <div className="line bottom right"></div>
+      <div className="line bottom right" />
     </section>
   );
 };

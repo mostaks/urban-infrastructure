@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Link from "next/link";
-import initIsotope from "../../common/initIsotope";
+import React from 'react';
+import Link from 'next/link';
+import initIsotope from '../../common/initIsotope';
 
 const WorksStyle3 = () => {
   React.useEffect(() => {
@@ -27,12 +27,10 @@ const WorksStyle3 = () => {
           <div className="gallery-mons full-width">
             <div className="items graphic wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
-                <Link
-                  href={`/project-details2/project-details2-dark`}
-                >
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/1.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
@@ -46,19 +44,19 @@ const WorksStyle3 = () => {
 
             <div className="items web brand wow fadeInUp" data-wow-delay=".4s">
               <div className="item-img">
-                <Link
-                  href={`/project-details2/project-details2-dark`}
-                >
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/2.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
               <div className="cont flex">
                 <h6 className="color-font">Modern Design</h6>
                 <span>
-                  <a href="#0">Brand</a>, <a href="#0">Web</a>
+                  <a href="#0">Brand</a>
+                  ,
+                  <a href="#0">Web</a>
                 </span>
               </div>
             </div>
@@ -68,12 +66,10 @@ const WorksStyle3 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link
-                  href={`/project-details2/project-details2-dark`}
-                >
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/3.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>
@@ -90,12 +86,10 @@ const WorksStyle3 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link
-                  href={`/project-details2/project-details2-dark`}
-                >
+                <Link href="/project-details2/project-details2-dark">
                   <a className="imago wow">
                     <img src="/img/portfolio/cr/4.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
+                    <div className="item-img-overlay" />
                   </a>
                 </Link>
               </div>

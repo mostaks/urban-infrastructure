@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import teamSkillsProgress from "../../common/teamSkillsProgress";
-import tooltipEffect from "../../common/tooltipEffect";
-import teamsDate from "../../data/sections/team.json";
+import React from 'react';
+import teamSkillsProgress from '../../common/teamSkillsProgress';
+import tooltipEffect from '../../common/tooltipEffect';
+import teamsDate from '../../data/sections/team.json';
 
 const Team = () => {
   React.useEffect(() => {
-    teamSkillsProgress()
+    teamSkillsProgress();
     setTimeout(() => {
-      tooltipEffect()
+      tooltipEffect();
     }, 1000);
   }, []);
   return (
@@ -19,9 +19,9 @@ const Team = () => {
             <div className="content wow fadeInUp md-mb30" data-wow-delay=".5s">
               <div className="sub-title">
                 <h6>Our Staff</h6>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
               </div>
               <h3 className="co-tit mb-15">
                 We help to create visual strategies.
@@ -35,7 +35,7 @@ const Team = () => {
                   <div className="skill-item" key={skill.id}>
                     <h6 className="custom-font">{skill.text}</h6>
                     <div className="skill-progress">
-                      <div className="progres" data-value={skill.value}></div>
+                      <div className="progres" data-value={skill.value} />
                     </div>
                   </div>
                 ))}
@@ -52,7 +52,7 @@ const Team = () => {
                         <div
                           className={`img sizxl ${
                             index + 1 != teamsDate.teams.slice(0, 2).length
-                              ? "mb-30"
+                              ? 'mb-30'
                               : null
                           }`}
                           data-tooltip-tit={team.title}
@@ -71,7 +71,7 @@ const Team = () => {
                         <div
                           className={`img sizxl ${
                             index + 1 != teamsDate.teams.slice(2, 4).length
-                              ? "mb-30"
+                              ? 'mb-30'
                               : null
                           }`}
                           data-tooltip-tit={team.title}

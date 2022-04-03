@@ -1,25 +1,25 @@
-import React from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+import React from 'react';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const SkillsCircle = ({ from, theme }) => {
   const cpStyle = {
     path: {
-      stroke: "rgb(18, 194, 233)",
+      stroke: 'rgb(18, 194, 233)',
     },
     trail: {
-      stroke: theme ? (theme == "dark" ? "#0f1013" : "#e5e5e5") : "",
+      stroke: theme ? (theme == 'dark' ? '#0f1013' : '#e5e5e5') : '',
     },
     text: {
-      fill: theme ? (theme == "dark" ? "#ffffff" : "#4e4e4e") : "",
+      fill: theme ? (theme == 'dark' ? '#ffffff' : '#4e4e4e') : '',
       // Text size
-      fontSize: "16px",
+      fontSize: '16px',
     },
   };
   return (
     <section
       className={`skills-circle pt-50 pb-50 ${
-        from ? (from === "aboutPage" ? "sub-bg" : "") : ""
+        from ? (from === 'aboutPage' ? 'sub-bg' : '') : ''
       }`}
     >
       <div className="container">

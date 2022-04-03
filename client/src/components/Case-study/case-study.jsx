@@ -1,12 +1,13 @@
-import React from "react";
-import Link from "next/link";
-import caseStudyData from "../../data/sections/case-study.json";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, EffectFade } from "swiper";
-import "swiper/css/effect-fade";
-import "swiper/css";
-import "swiper/css/navigation";
-import removeSlashFromPagination from "../../common/removeSlashpagination";
+import React from 'react';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
+import caseStudyData from '../../data/sections/case-study.json';
+import 'swiper/css/effect-fade';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import removeSlashFromPagination from '../../common/removeSlashpagination';
+
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 const CaseStudy = () => {
@@ -23,7 +24,7 @@ const CaseStudy = () => {
   const paginationRef = React.useRef(null);
   return (
     <section className="case-study">
-      <h2 style={{ display: "none" }}>&nbsp;</h2>
+      <h2 style={{ display: 'none' }}>&nbsp;</h2>
       <div
         id="content-carousel-container-unq-1"
         className="swiper-container"
@@ -31,7 +32,7 @@ const CaseStudy = () => {
       >
         {!load ? (
           <Swiper
-            effect={"fade"}
+            effect="fade"
             speed={1000}
             navigation={{
               prevEl: navigationPrevRef.current,
@@ -48,10 +49,10 @@ const CaseStudy = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
+                for (let i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
+                    'data-swiper-parallax',
+                    0.75 * swiper.width,
                   );
                 }
 
@@ -99,16 +100,16 @@ const CaseStudy = () => {
             ref={navigationNextRef}
             className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
           >
-            <i className="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right" />
           </div>
           <div
             ref={navigationPrevRef}
             className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
           >
-            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left" />
           </div>
         </div>
-        <div className="swiper-pagination" ref={paginationRef}></div>
+        <div className="swiper-pagination" ref={paginationRef} />
       </div>
     </section>
   );

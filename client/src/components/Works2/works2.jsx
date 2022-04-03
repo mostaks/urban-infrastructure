@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-css-tags */
-import Head from "next/head";
-import Link from "next/link";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation } from 'swiper';
 
-import "swiper/css";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 SwiperCore.use([Navigation]);
 
@@ -36,7 +36,11 @@ const Works2 = ({ sliderRef }) => {
                   Latest Work
                 </h6>
                 <h3 className="wow color-font">
-                  Our Recent Web Design &amp; <br /> Some Past Projects.
+                  Our Recent Web Design &amp;
+                  {' '}
+                  <br />
+                  {' '}
+                  Some Past Projects.
                 </h3>
               </div>
             </div>
@@ -48,7 +52,7 @@ const Works2 = ({ sliderRef }) => {
                   {!load ? (
                     <Swiper
                       speed={1000}
-                      loop={true}
+                      loop
                       spaceBetween={0}
                       breakpoints={{
                         320: {
@@ -73,17 +77,13 @@ const Works2 = ({ sliderRef }) => {
                         nextEl: navigationNextRef.current,
                       }}
                       onBeforeInit={(swiper) => {
-                        swiper.params.navigation.prevEl =
-                          navigationPrevRef.current;
-                        swiper.params.navigation.nextEl =
-                          navigationNextRef.current;
+                        swiper.params.navigation.prevEl = navigationPrevRef.current;
+                        swiper.params.navigation.nextEl = navigationNextRef.current;
                       }}
                       onSwiper={(swiper) => {
                         setTimeout(() => {
-                          swiper.params.navigation.prevEl =
-                            navigationPrevRef.current;
-                          swiper.params.navigation.nextEl =
-                            navigationNextRef.current;
+                          swiper.params.navigation.prevEl = navigationPrevRef.current;
+                          swiper.params.navigation.nextEl = navigationNextRef.current;
 
                           swiper.navigation.destroy();
                           swiper.navigation.init();
@@ -101,21 +101,17 @@ const Works2 = ({ sliderRef }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/1.jpg)",
+                              backgroundImage: 'url(/img/portfolio/curs/1.jpg)',
                             }}
-                          ></div>
+                          />
                           <div className="cont bgbox">
                             <h6>
-                              <Link
-                                href={`/works2/works2-dark`}
-                              >
+                              <Link href="/works2/works2-dark">
                                 <a>art &amp; illustration</a>
                               </Link>
                             </h6>
                             <h4>
-                              <Link
-                                href={`/project-details2/project-details2-dark`}
-                              >
+                              <Link href="/project-details2/project-details2-dark">
                                 <a>Innovation and Crafts.</a>
                               </Link>
                             </h4>
@@ -130,21 +126,17 @@ const Works2 = ({ sliderRef }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/2.jpg)",
+                              backgroundImage: 'url(/img/portfolio/curs/2.jpg)',
                             }}
-                          ></div>
+                          />
                           <div className="cont bgbox">
                             <h6>
-                              <Link
-                                href={`/works2/works2-dark`}
-                              >
+                              <Link href="/works2/works2-dark">
                                 <a>art &amp; illustration</a>
                               </Link>
                             </h6>
                             <h4>
-                              <Link
-                                href={`/project-details2/project-details2-dark`}
-                              >
+                              <Link href="/project-details2/project-details2-dark">
                                 <a>Inspiring new space.</a>
                               </Link>
                             </h4>
@@ -159,21 +151,17 @@ const Works2 = ({ sliderRef }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/3.jpg)",
+                              backgroundImage: 'url(/img/portfolio/curs/3.jpg)',
                             }}
-                          ></div>
+                          />
                           <div className="cont bgbox">
                             <h6>
-                              <Link
-                                href={`/works2/works2-dark`}
-                              >
+                              <Link href="/works2/works2-dark">
                                 <a>art &amp; illustration</a>
                               </Link>
                             </h6>
                             <h4>
-                              <Link
-                                href={`/project-details2/project-details2-dark`}
-                              >
+                              <Link href="/project-details2/project-details2-dark">
                                 <a>Natural plus modern.</a>
                               </Link>
                             </h4>
@@ -188,21 +176,17 @@ const Works2 = ({ sliderRef }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/4.jpg)",
+                              backgroundImage: 'url(/img/portfolio/curs/4.jpg)',
                             }}
-                          ></div>
+                          />
                           <div className="cont bgbox">
                             <h6>
-                              <Link
-                                href={`/works2/works2-dark`}
-                              >
+                              <Link href="/works2/works2-dark">
                                 <a>art &amp; illustration</a>
                               </Link>
                             </h6>
                             <h4>
-                              <Link
-                                href={`/project-details2/project-details2-dark`}
-                              >
+                              <Link href="/project-details2/project-details2-dark">
                                 <a>Innovation and Crafts.</a>
                               </Link>
                             </h4>
@@ -217,21 +201,17 @@ const Works2 = ({ sliderRef }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/5.jpg)",
+                              backgroundImage: 'url(/img/portfolio/curs/5.jpg)',
                             }}
-                          ></div>
+                          />
                           <div className="cont bgbox">
                             <h6>
-                              <Link
-                                href={`/works2/works2-dark`}
-                              >
+                              <Link href="/works2/works2-dark">
                                 <a>art &amp; illustration</a>
                               </Link>
                             </h6>
                             <h4>
-                              <Link
-                                href={`/project-details2/project-details2-dark`}
-                              >
+                              <Link href="/project-details2/project-details2-dark">
                                 <a>Inspiring new space.</a>
                               </Link>
                             </h4>
@@ -245,13 +225,13 @@ const Works2 = ({ sliderRef }) => {
                     ref={navigationNextRef}
                     className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
                   >
-                    <i className="ion-ios-arrow-right"></i>
+                    <i className="ion-ios-arrow-right" />
                   </div>
                   <div
                     ref={navigationPrevRef}
                     className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
                   >
-                    <i className="ion-ios-arrow-left"></i>
+                    <i className="ion-ios-arrow-left" />
                   </div>
                 </div>
               </div>

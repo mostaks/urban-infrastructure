@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Link from "next/link";
-import { Formik, Form, Field } from "formik";
-import { Link as ScrollLink } from "react-scroll";
+import React from 'react';
+import Link from 'next/link';
+import { Formik, Form, Field } from 'formik';
+import { Link as ScrollLink } from 'react-scroll';
 
 const BlogDetails = ({ theme }) => {
   const messageRef = React.useRef(null);
   function validateEmail(value) {
     let error;
     if (!value) {
-      error = "Required";
+      error = 'Required';
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
+      error = 'Invalid email address';
     }
     return error;
   }
@@ -67,20 +67,30 @@ const BlogDetails = ({ theme }) => {
 
                       <ul>
                         <li>
-                          <span>01</span> Integer in volutpat libero.
+                          <span>01</span>
+                          {' '}
+                          Integer in volutpat libero.
                         </li>
                         <li>
-                          <span>02</span> Vivamus maximus ultricies pulvinar.
+                          <span>02</span>
+                          {' '}
+                          Vivamus maximus ultricies pulvinar.
                         </li>
                         <li>
-                          <span>03</span> priorities that will pop up in any
+                          <span>03</span>
+                          {' '}
+                          priorities that will pop up in any
                           particular month.
                         </li>
                         <li>
-                          <span>04</span> We all intend to plan ahead.
+                          <span>04</span>
+                          {' '}
+                          We all intend to plan ahead.
                         </li>
                         <li>
-                          <span>05</span> The main component of a healthy env
+                          <span>05</span>
+                          {' '}
+                          The main component of a healthy env
                           for self esteem.
                         </li>
                       </ul>
@@ -118,17 +128,20 @@ const BlogDetails = ({ theme }) => {
                       <div className="share-info">
                         <div className="social">
                           <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f" />
                           </a>
                           <a href="#0">
-                            <i className="fab fa-twitter"></i>
+                            <i className="fab fa-twitter" />
                           </a>
                           <a href="#0">
-                            <i className="fab fa-behance"></i>
+                            <i className="fab fa-behance" />
                           </a>
                         </div>
                         <div className="tags">
-                          <a href="#0">Web</a>,<a href="#0">Themeforest</a>,
+                          <a href="#0">Web</a>
+                          ,
+                          <a href="#0">Themeforest</a>
+                          ,
                           <a href="#0">ThemesCamp</a>
                         </div>
                       </div>
@@ -139,7 +152,9 @@ const BlogDetails = ({ theme }) => {
                       </div>
                       <div className="info">
                         <h6>
-                          <span>author :</span> Jorden Griffin
+                          <span>author :</span>
+                          {' '}
+                          Jorden Griffin
                         </h6>
                         <p>
                           the main component of a healthy environment for self
@@ -148,13 +163,13 @@ const BlogDetails = ({ theme }) => {
                         </p>
                         <div className="social">
                           <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f" />
                           </a>
                           <a href="#0">
-                            <i className="fab fa-twitter"></i>
+                            <i className="fab fa-twitter" />
                           </a>
                           <a href="#0">
-                            <i className="fab fa-behance"></i>
+                            <i className="fab fa-behance" />
                           </a>
                         </div>
                       </div>
@@ -168,9 +183,9 @@ const BlogDetails = ({ theme }) => {
                   <a href="#0">Prev Post</a>
                 </span>
                 <span className="icon">
-                  <Link href={`/blog/blog-dark`}>
+                  <Link href="/blog/blog-dark">
                     <a>
-                      <i className="fas fa-th-large"></i>
+                      <i className="fas fa-th-large" />
                     </a>
                   </Link>
                 </span>
@@ -187,17 +202,21 @@ const BlogDetails = ({ theme }) => {
                   </div>
                   <div className="info">
                     <h6>
-                      Jorden Griffin - <span> 6 Aug 2022</span>
+                      Jorden Griffin -
+                      {' '}
+                      <span> 6 Aug 2022</span>
                     </h6>
                     <span className="replay">
                       <ScrollLink
                         to="comment-form"
-                        spy={true}
-                        smooth={true}
+                        spy
+                        smooth
                         offset={-150}
                         duration={500}
                       >
-                        Replay <i className="fas fa-reply"></i>
+                        Replay
+                        {' '}
+                        <i className="fas fa-reply" />
                       </ScrollLink>
                     </span>
                     <p>
@@ -213,17 +232,21 @@ const BlogDetails = ({ theme }) => {
                   </div>
                   <div className="info">
                     <h6>
-                      Jorden Griffin - <span> 6 Aug 2022</span>
+                      Jorden Griffin -
+                      {' '}
+                      <span> 6 Aug 2022</span>
                     </h6>
                     <span className="replay">
                       <ScrollLink
                         to="comment-form"
-                        spy={true}
-                        smooth={true}
+                        spy
+                        smooth
                         offset={-150}
                         duration={500}
                       >
-                        Replay <i className="fas fa-reply"></i>
+                        Replay
+                        {' '}
+                        <i className="fas fa-reply" />
                       </ScrollLink>
                     </span>
                     <p>
@@ -239,17 +262,21 @@ const BlogDetails = ({ theme }) => {
                   </div>
                   <div className="info">
                     <h6>
-                      Jorden Griffin - <span> 6 Aug 2022</span>
+                      Jorden Griffin -
+                      {' '}
+                      <span> 6 Aug 2022</span>
                     </h6>
                     <span className="replay">
                       <ScrollLink
                         to="comment-form"
-                        spy={true}
-                        smooth={true}
+                        spy
+                        smooth
                         offset={-150}
                         duration={500}
                       >
-                        Replay <i className="fas fa-reply"></i>
+                        Replay
+                        {' '}
+                        <i className="fas fa-reply" />
                       </ScrollLink>
                     </span>
                     <p>
@@ -266,17 +293,17 @@ const BlogDetails = ({ theme }) => {
                 <div className="form">
                   <Formik
                     initialValues={{
-                      name: "",
-                      email: "",
-                      comment: "",
+                      name: '',
+                      email: '',
+                      comment: '',
                     }}
                     onSubmit={async (values) => {
                       await sendMessage(500);
                       alert(JSON.stringify(values, null, 2));
                       // Reset the values
-                      values.name = "";
-                      values.email = "";
-                      values.comment = "";
+                      values.name = '';
+                      values.email = '';
+                      values.comment = '';
                     }}
                   >
                     {({ errors, touched }) => (
@@ -319,10 +346,10 @@ const BlogDetails = ({ theme }) => {
                                 type="submit"
                                 className={`nb butn ${
                                   theme
-                                    ? theme === "light"
-                                      ? "dark"
-                                      : ""
-                                    : "light"
+                                    ? theme === 'light'
+                                      ? 'dark'
+                                      : ''
+                                    : 'light'
                                 } curve full-width`}
                               >
                                 Comment

@@ -1,7 +1,7 @@
-import React from "react";
-import Split from "../Split";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
+import React from 'react';
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+import Split from '../Split';
 
 const Numbers2 = () => {
   React.useEffect(() => {
@@ -14,10 +14,10 @@ const Numbers2 = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="item md-mb50">
-                <span className="icon pe-7s-smile"></span>
+                <span className="icon pe-7s-smile" />
                 <h3 className="custom-font">
                   &nbsp;
-                  <CountUp redraw={true} end={2400} duration="3">
+                  <CountUp redraw end={2400} duration="3">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="count" ref={countUpRef} />
@@ -34,10 +34,10 @@ const Numbers2 = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="item md-mb50">
-                <span className="icon pe-7s-portfolio"></span>
+                <span className="icon pe-7s-portfolio" />
                 <h3 className="custom-font">
                   &nbsp;
-                  <CountUp redraw={true} end={133} duration="3">
+                  <CountUp redraw end={133} duration="3">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="count" ref={countUpRef} />
@@ -54,10 +54,10 @@ const Numbers2 = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="item sm-mb50">
-                <span className="icon pe-7s-cloud-download"></span>
+                <span className="icon pe-7s-cloud-download" />
                 <h3 className="custom-font">
                   &nbsp;
-                  <CountUp redraw={true} end={254} duration="3">
+                  <CountUp redraw end={254} duration="3">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="count" ref={countUpRef} />
@@ -75,10 +75,10 @@ const Numbers2 = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="item">
-                <span className="icon pe-7s-medal"></span>
+                <span className="icon pe-7s-medal" />
                 <h3 className="custom-font">
                   &nbsp;
-                  <CountUp redraw={true} end={46} duration="3">
+                  <CountUp redraw end={46} duration="3">
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="count" ref={countUpRef} />

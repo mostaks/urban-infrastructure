@@ -1,14 +1,14 @@
-import React from "react";
-import { Formik, Form, Field } from "formik";
+import React from 'react';
+import { Formik, Form, Field } from 'formik';
 
 const ContactArch = () => {
   const messageRef = React.useRef(null);
   function validateEmail(value) {
     let error;
     if (!value) {
-      error = "Required";
+      error = 'Required';
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
+      error = 'Invalid email address';
     }
     return error;
   }
@@ -17,7 +17,7 @@ const ContactArch = () => {
     <section
       id="contact-arch"
       className="contact-sec style2 section-padding position-re bg-img"
-      style={{ backgroundImage: "url(/img/patrn1.png)" }}
+      style={{ backgroundImage: 'url(/img/patrn1.png)' }}
     >
       <div className="container">
         <div className="row justify-content-center">
@@ -34,30 +34,29 @@ const ContactArch = () => {
             <div className="form wow fadeInUp" data-wow-delay=".5s">
               <Formik
                 initialValues={{
-                  name: "",
-                  email: "",
-                  message: "",
+                  name: '',
+                  email: '',
+                  message: '',
                 }}
                 onSubmit={async (values) => {
                   await sendMessage(500);
                   alert(JSON.stringify(values, null, 2));
                   // show message
 
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
+                  messageRef.current.innerText = 'Your Message has been successfully sent. I will contact you soon.';
                   // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.message = "";
+                  values.name = '';
+                  values.email = '';
+                  values.message = '';
                   // clear message
                   setTimeout(() => {
-                    messageRef.current.innerText = "";
+                    messageRef.current.innerText = '';
                   }, 2000);
                 }}
               >
                 {({ errors, touched }) => (
                   <Form id="contact-form">
-                    <div className="messages" ref={messageRef}></div>
+                    <div className="messages" ref={messageRef} />
                     <br />
 
                     <div className="controls">

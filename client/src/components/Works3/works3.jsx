@@ -1,15 +1,16 @@
 /* eslint-disable @next/next/no-css-tags */
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Head from "next/head";
-import worksData from "../../data/sections/works.json";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react';
+import Head from 'next/head';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
-import Link from "next/link";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
+import Link from 'next/link';
+import worksData from '../../data/sections/works.json';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Works3 = () => {
@@ -29,7 +30,11 @@ const Works3 = () => {
                   Portfolio
                 </h6>
                 <h3 className="wow color-font">
-                  Our Recent Web Design &amp; <br /> Some Past Projects.
+                  Our Recent Web Design &amp;
+                  {' '}
+                  <br />
+                  {' '}
+                  Some Past Projects.
                 </h3>
               </div>
             </div>
@@ -43,12 +48,12 @@ const Works3 = () => {
                 <Swiper
                   className="swiper-wrapper"
                   slidesPerView={2}
-                  centeredSlides={true}
+                  centeredSlides
                   autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
                   }}
-                  loop={true}
+                  loop
                   navigation={{
                     prevEl: navigationPrevRef.current,
                     nextEl: navigationNextRef.current,
@@ -59,10 +64,8 @@ const Works3 = () => {
                   }}
                   onSwiper={(swiper) => {
                     setTimeout(() => {
-                      swiper.params.navigation.prevEl =
-                        navigationPrevRef.current;
-                      swiper.params.navigation.nextEl =
-                        navigationNextRef.current;
+                      swiper.params.navigation.prevEl = navigationPrevRef.current;
+                      swiper.params.navigation.nextEl = navigationNextRef.current;
 
                       swiper.navigation.destroy();
                       swiper.navigation.init();
@@ -93,22 +96,18 @@ const Works3 = () => {
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
-                          <span className="wow cimgio" data-delay="500"></span>
+                          <span className="wow cimgio" data-delay="500" />
                           <img src="/img/portfolio/2.jpg" alt="" />
                         </span>
                       </div>
                       <div className="cont">
                         <h6>
-                          <Link
-                            href={`/works3/works3-dark`}
-                          >
+                          <Link href="/works3/works3-dark">
                             art &amp; illustration
                           </Link>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             Inspiring new space
                           </Link>
                         </h4>
@@ -119,22 +118,18 @@ const Works3 = () => {
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
-                          <span className="wow cimgio" data-delay="500"></span>
+                          <span className="wow cimgio" data-delay="500" />
                           <img src="/img/portfolio/1.jpg" alt="" />
                         </span>
                       </div>
                       <div className="cont">
                         <h6>
-                          <Link
-                            href={`/works3/works3-dark`}
-                          >
+                          <Link href="/works3/works3-dark">
                             art &amp; illustration
                           </Link>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             Inspiring new space
                           </Link>
                         </h4>
@@ -145,22 +140,18 @@ const Works3 = () => {
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
-                          <span className="wow cimgio" data-delay="500"></span>
+                          <span className="wow cimgio" data-delay="500" />
                           <img src="/img/portfolio/3.jpg" alt="" />
                         </span>
                       </div>
                       <div className="cont">
                         <h6>
-                          <Link
-                            href={`/works3/works3-dark`}
-                          >
+                          <Link href="/works3/works3-dark">
                             art &amp; illustration
                           </Link>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             Inspiring new space
                           </Link>
                         </h4>
@@ -171,22 +162,18 @@ const Works3 = () => {
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
-                          <span className="wow cimgio" data-delay="500"></span>
+                          <span className="wow cimgio" data-delay="500" />
                           <img src="/img/portfolio/4.jpg" alt="" />
                         </span>
                       </div>
                       <div className="cont">
                         <h6>
-                          <Link
-                            href={`/works3/works3-dark`}
-                          >
+                          <Link href="/works3/works3-dark">
                             art &amp; illustration
                           </Link>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             Inspiring new space
                           </Link>
                         </h4>
@@ -197,22 +184,18 @@ const Works3 = () => {
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
-                          <span className="wow cimgio" data-delay="500"></span>
+                          <span className="wow cimgio" data-delay="500" />
                           <img src="/img/portfolio/5.jpg" alt="" />
                         </span>
                       </div>
                       <div className="cont">
                         <h6>
-                          <Link
-                            href={`/works3/works3-dark`}
-                          >
+                          <Link href="/works3/works3-dark">
                             art &amp; illustration
                           </Link>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             Inspiring new space
                           </Link>
                         </h4>
@@ -223,22 +206,18 @@ const Works3 = () => {
                     <div className="content">
                       <div className="img">
                         <span className="imgio">
-                          <span className="wow cimgio" data-delay="500"></span>
+                          <span className="wow cimgio" data-delay="500" />
                           <img src="/img/portfolio/6.jpg" alt="" />
                         </span>
                       </div>
                       <div className="cont">
                         <h6>
-                          <Link
-                            href={`/works3/works3-dark`}
-                          >
+                          <Link href="/works3/works3-dark">
                             art &amp; illustration
                           </Link>
                         </h6>
                         <h4>
-                          <Link
-                            href={`/project-details2/project-details2-dark`}
-                          >
+                          <Link href="/project-details2/project-details2-dark">
                             Inspiring new space
                           </Link>
                         </h4>
@@ -251,13 +230,13 @@ const Works3 = () => {
                   ref={navigationNextRef}
                   className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
                 >
-                  <i className="ion-ios-arrow-right"></i>
+                  <i className="ion-ios-arrow-right" />
                 </div>
                 <div
                   ref={navigationPrevRef}
                   className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
                 >
-                  <i className="ion-ios-arrow-left"></i>
+                  <i className="ion-ios-arrow-left" />
                 </div>
               </div>
             </div>

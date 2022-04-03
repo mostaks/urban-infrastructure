@@ -1,24 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Link from "next/link";
-import appData from "../../data/app.json";
-import initFullNavbarMenu from "../../common/initFullNavbarMenu";
+import React from 'react';
+import Link from 'next/link';
+import appData from '../../data/app.json';
+import initFullNavbarMenu from '../../common/initFullNavbarMenu';
 
 const NavbarFullMenu = ({ theme }) => {
   React.useEffect(() => {
-    initFullNavbarMenu()
-  }, [])
+    initFullNavbarMenu();
+  }, []);
   return (
     <>
       <div
         id="navi"
-        className={`topnav ${theme ? (theme === "light" ? "light" : "") : ""}`}
+        className={`topnav ${theme ? (theme === 'light' ? 'light' : '') : ''}`}
       >
         <div className="container-fluid">
           <div className="logo">
             <a href="/">
               {theme ? (
-                theme === "light" ? (
+                theme === 'light' ? (
                   <img src={appData.darkLogo} alt="logo" />
                 ) : (
                   <img src={appData.lightLogo} alt="logo" />
@@ -30,8 +30,8 @@ const NavbarFullMenu = ({ theme }) => {
           </div>
           <div className="menu-icon">
             <span className="icon">
-              <i></i>
-              <i></i>
+              <i />
+              <i />
             </span>
             <span className="text" data-splitting>
               <span className="menu-text word">Menu</span>
@@ -48,27 +48,30 @@ const NavbarFullMenu = ({ theme }) => {
                 <ul className="main-menu">
                   <li>
                     <div className="o-hidden">
-                    <Link href={`/`}>
+                      <Link href="/">
                         <a className="link">
-                          <span className="nm">01.</span>Home
+                          <span className="nm">01.</span>
+                          Home
                         </a>
                       </Link>
                     </div>
                   </li>
                   <li>
                     <div className="o-hidden">
-                      <Link href={`/about/about-light`}>
+                      <Link href="/about/about-light">
                         <a className="link">
-                          <span className="nm">02.</span>About Us
+                          <span className="nm">02.</span>
+                          About Us
                         </a>
                       </Link>
                     </div>
                   </li>
                   <li>
                     <div className="o-hidden">
-                      <Link href={`/contact/contact-light`}>
+                      <Link href="/contact/contact-light">
                         <a className="link">
-                          <span className="nm">05.</span>Contact
+                          <span className="nm">05.</span>
+                          Contact
                         </a>
                       </Link>
                     </div>
@@ -84,9 +87,7 @@ const NavbarFullMenu = ({ theme }) => {
                 </div>
                 <div className="item">
                   <h6>Address :</h6>
-                  <p>
-                  117 Great Western Hwy, Blaxland NSW 2750
-                  </p>
+                  <p>117 Great Western Hwy, Blaxland NSW 2750</p>
                 </div>
                 <div className="item">
                   <h6>Email :</h6>

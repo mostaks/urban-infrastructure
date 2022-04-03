@@ -1,9 +1,9 @@
-import React from "react";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
+import React from 'react';
+import ModalVideo from 'react-modal-video';
+import 'react-modal-video/css/modal-video.css';
 
 const ProjectVideo = ({ projectVideoDate }) => {
-  console.clear()
+  console.clear();
   const [isOpen, setOpen] = React.useState(false);
   return (
     <section>
@@ -16,7 +16,7 @@ const ProjectVideo = ({ projectVideoDate }) => {
           data-overlay-dark="4"
         >
           <div className="full-width text-center">
-            {typeof window !== "undefined" && (
+            {typeof window !== 'undefined' && (
               <ModalVideo
                 channel="vimeo"
                 autoplay
@@ -34,7 +34,7 @@ const ProjectVideo = ({ projectVideoDate }) => {
             >
               <div className="vid-butn">
                 <span className="icon">
-                  <i className="fas fa-play"></i>
+                  <i className="fas fa-play" />
                 </span>
               </div>
             </a>

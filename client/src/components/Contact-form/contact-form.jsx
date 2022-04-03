@@ -1,15 +1,15 @@
-import React from "react";
-import ContactFromDate from "../../data/sections/form-info.json";
-import { Formik, Form, Field } from "formik";
+import React from 'react';
+import { Formik, Form, Field } from 'formik';
+import ContactFromDate from '../../data/sections/form-info.json';
 
 const ContactForm = () => {
   const messageRef = React.useRef(null);
   function validateEmail(value) {
     let error;
     if (!value) {
-      error = "Required";
+      error = 'Required';
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
+      error = 'Invalid email address';
     }
     return error;
   }
@@ -23,30 +23,29 @@ const ContactForm = () => {
               <h4 className="fw-700 color-font mb-50">Get In Touch.</h4>
               <Formik
                 initialValues={{
-                  name: "",
-                  email: "",
-                  message: "",
+                  name: '',
+                  email: '',
+                  message: '',
                 }}
                 onSubmit={async (values) => {
                   await sendMessage(500);
                   alert(JSON.stringify(values, null, 2));
                   // show message
 
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
+                  messageRef.current.innerText = 'Your Message has been successfully sent. I will contact you soon.';
                   // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.message = "";
+                  values.name = '';
+                  values.email = '';
+                  values.message = '';
                   // clear message
                   setTimeout(() => {
-                    messageRef.current.innerText = ''
-                  }, 2000)
+                    messageRef.current.innerText = '';
+                  }, 2000);
                 }}
               >
                 {({ errors, touched }) => (
                   <Form id="contact-form">
-                    <div className="messages" ref={messageRef}></div>
+                    <div className="messages" ref={messageRef} />
                     <div className="controls">
                       <div className="form-group">
                         <Field
@@ -113,16 +112,16 @@ const ContactForm = () => {
               </div>
               <div className="social mt-50">
                 <a href="#0" className="icon">
-                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f" />
                 </a>
                 <a href="#0" className="icon">
-                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-twitter" />
                 </a>
                 <a href="#0" className="icon">
-                  <i className="fab fa-pinterest"></i>
+                  <i className="fab fa-pinterest" />
                 </a>
                 <a href="#0" className="icon">
-                  <i className="fab fa-behance"></i>
+                  <i className="fab fa-behance" />
                 </a>
               </div>
             </div>

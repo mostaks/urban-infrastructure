@@ -1,19 +1,19 @@
-import React from "react";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ShowcassesFullScreenData from "../../data/showcases-full-screen-slider.json";
+import React from 'react';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
   Navigation,
   Pagination,
   Parallax,
   Mousewheel,
-} from "swiper";
+} from 'swiper';
+import ShowcassesFullScreenData from '../../data/showcases-full-screen-slider.json';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/mousewheel";
-import tooltipEffect from "../../common/tooltipEffect";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/mousewheel';
+import tooltipEffect from '../../common/tooltipEffect';
 
 SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
@@ -35,12 +35,12 @@ const ShowcasesGrid = () => {
         {!load ? (
           <Swiper
             speed={1000}
-            mousewheel={true}
+            mousewheel
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-            loop={true}
+            loop
             spaceBetween={30}
             navigation={{
               prevEl: navigationPrevRef.current,
@@ -66,10 +66,10 @@ const ShowcasesGrid = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
+                for (let i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
+                    'data-swiper-parallax',
+                    0.75 * swiper.width,
                   );
                 }
 
@@ -86,17 +86,15 @@ const ShowcasesGrid = () => {
           >
             {ShowcassesFullScreenData.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
-                <Link passHref href={`/project-details2/project-details2-dark`}>
+                <Link passHref href="/project-details2/project-details2-dark">
                   <div
                     className="bg-img"
                     style={{
                       backgroundImage: `url(${slide.image})`,
                     }}
-                    data-tooltip-tit={
-                      slide.title.first + " " + slide.title.second
-                    }
+                    data-tooltip-tit={`${slide.title.first} ${slide.title.second}`}
                     data-tooltip-sub={slide.sub}
-                  ></div>
+                  />
                 </Link>
               </SwiperSlide>
             ))}
@@ -112,7 +110,7 @@ const ShowcasesGrid = () => {
             <span>Next Slide</span>
           </div>
           <div>
-            <i className="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right" />
           </div>
         </div>
         <div
@@ -120,14 +118,14 @@ const ShowcasesGrid = () => {
           className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
         >
           <div>
-            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left" />
           </div>
           <div>
             <span>Prev Slide</span>
           </div>
         </div>
 
-        <div className="swiper-pagination dots" ref={paginationRef}></div>
+        <div className="swiper-pagination dots" ref={paginationRef} />
       </div>
     </header>
   );

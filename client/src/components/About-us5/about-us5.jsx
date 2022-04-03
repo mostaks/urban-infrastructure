@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import aboutSkillsProgress from "../../common/aboutSkillsProgress";
+import React from 'react';
+import aboutSkillsProgress from '../../common/aboutSkillsProgress';
 
 const AboutUs5 = () => {
   React.useEffect(() => {
     aboutSkillsProgress(
-      document.querySelector(".about-cr .skills-box"),
-      document.querySelectorAll(".skill-progress .progres"),
-      document.querySelector(".about-cr")
+      document.querySelector('.about-cr .skills-box'),
+      document.querySelectorAll('.skill-progress .progres'),
+      document.querySelector('.about-cr'),
     );
   }, []);
   return (
@@ -31,13 +31,13 @@ const AboutUs5 = () => {
                 <div className="skill-item">
                   <h5 className="fz-14 mb-15">UI / UX Design</h5>
                   <div className="skill-progress">
-                    <div className="progres" data-value="90%"></div>
+                    <div className="progres" data-value="90%" />
                   </div>
                 </div>
                 <div className="skill-item">
                   <h5 className="fz-14 mb-15">Apps Development</h5>
                   <div className="skill-progress">
-                    <div className="progres" data-value="80%"></div>
+                    <div className="progres" data-value="80%" />
                   </div>
                 </div>
               </div>

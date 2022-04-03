@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Split from "../Split";
-import Link from "next/link";
-import { thumparallaxDown } from "../../common/thumparallax";
+import React from 'react';
+import Link from 'next/link';
+import Split from '../Split';
+import { thumparallaxDown } from '../../common/thumparallax';
 
 const MinimalArea2 = () => {
   React.useEffect(() => {
@@ -42,7 +42,7 @@ const MinimalArea2 = () => {
                   We work with some of the most successful businesses.
                 </li>
               </ul>
-              <Link href={`/about/about-dark`}>
+              <Link href="/about/about-dark">
                 <a
                   className="butn bord curve mt-40 wow fadeInUp"
                   data-wow-delay=".8s"

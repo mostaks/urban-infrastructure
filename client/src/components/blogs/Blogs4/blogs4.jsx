@@ -1,20 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
 import SwiperCore, {
   Navigation,
   Pagination,
   Parallax,
   EffectFade,
-} from "swiper";
+} from 'swiper';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-import { thumparallax } from "../../../common/thumparallax";
-import removeSlashFromPagination from "../../../common/removeSlashpagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+import { thumparallax } from '../../../common/thumparallax';
+import removeSlashFromPagination from '../../../common/removeSlashpagination';
 
 SwiperCore.use([Navigation, Pagination, Parallax, EffectFade]);
 
@@ -34,7 +34,7 @@ const Blogs4 = () => {
 
   return (
     <section className="blog-crv sub-bg">
-      <h2 style={{ display: "none" }}>&nbsp;</h2>
+      <h2 style={{ display: 'none' }}>&nbsp;</h2>
       <div className="stories">
         <div className="container-fluid">
           <div className="row">
@@ -44,14 +44,14 @@ const Blogs4 = () => {
                   speed={800}
                   effect="fade"
                   spaceBetween={0}
-                  loop={true}
-                  parallax={true}
+                  loop
+                  parallax
                   navigation={{
                     prevEl: navigationPrevRef.current,
                     nextEl: navigationNextRef.current,
                   }}
                   pagination={{
-                    type: "fraction",
+                    type: 'fraction',
                     clickable: true,
                     el: paginationRef.current,
                   }}
@@ -62,17 +62,15 @@ const Blogs4 = () => {
                   }}
                   onSwiper={(swiper) => {
                     setTimeout(() => {
-                      for (var i = 0; i < swiper.slides.length; i++) {
+                      for (let i = 0; i < swiper.slides.length; i++) {
                         swiper.slides[i].childNodes[0].setAttribute(
-                          "data-swiper-parallax",
-                          0.75 * swiper.width
+                          'data-swiper-parallax',
+                          0.75 * swiper.width,
                         );
                       }
 
-                      swiper.params.navigation.prevEl =
-                        navigationPrevRef.current;
-                      swiper.params.navigation.nextEl =
-                        navigationNextRef.current;
+                      swiper.params.navigation.prevEl = navigationPrevRef.current;
+                      swiper.params.navigation.nextEl = navigationNextRef.current;
 
                       swiper.params.pagination.el = paginationRef.current;
 
@@ -129,13 +127,13 @@ const Blogs4 = () => {
                 <Swiper
                   speed={800}
                   spaceBetween={0}
-                  loop={true}
+                  loop
                   navigation={{
                     prevEl: navigationPrevRef.current,
                     nextEl: navigationNextRef.current,
                   }}
                   pagination={{
-                    type: "fraction",
+                    type: 'fraction',
                     clickable: true,
                     el: paginationRef.current,
                   }}
@@ -146,17 +144,15 @@ const Blogs4 = () => {
                   }}
                   onSwiper={(swiper) => {
                     setTimeout(() => {
-                      for (var i = 0; i < swiper.slides.length; i++) {
+                      for (let i = 0; i < swiper.slides.length; i++) {
                         swiper.slides[i].childNodes[0].setAttribute(
-                          "data-swiper-parallax",
-                          0.75 * swiper.width
+                          'data-swiper-parallax',
+                          0.75 * swiper.width,
                         );
                       }
 
-                      swiper.params.navigation.prevEl =
-                        navigationPrevRef.current;
-                      swiper.params.navigation.nextEl =
-                        navigationNextRef.current;
+                      swiper.params.navigation.prevEl = navigationPrevRef.current;
+                      swiper.params.navigation.nextEl = navigationNextRef.current;
 
                       swiper.params.pagination.el = paginationRef.current;
 
@@ -181,7 +177,7 @@ const Blogs4 = () => {
                         <div className="info">
                           <Link href="/blog/blog-dark">
                             <a>
-                              <i className="far fa-clock"></i>
+                              <i className="far fa-clock" />
                               06 Aug 2022
                             </a>
                           </Link>
@@ -202,7 +198,7 @@ const Blogs4 = () => {
                           </p>
                         </div>
                         <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href="/blog-details/blog-details-dark">
                             Read More
                           </Link>
                         </div>
@@ -218,7 +214,7 @@ const Blogs4 = () => {
                         <div className="info">
                           <Link href="/blog/blog-dark">
                             <a>
-                              <i className="far fa-clock"></i>
+                              <i className="far fa-clock" />
                               06 Aug 2022
                             </a>
                           </Link>
@@ -239,7 +235,7 @@ const Blogs4 = () => {
                           </p>
                         </div>
                         <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href="/blog-details/blog-details-dark">
                             Read More
                           </Link>
                         </div>
@@ -255,7 +251,7 @@ const Blogs4 = () => {
                         <div className="info">
                           <Link href="/blog/blog-dark">
                             <a>
-                              <i className="far fa-clock"></i>
+                              <i className="far fa-clock" />
                               06 Aug 2022
                             </a>
                           </Link>
@@ -276,7 +272,7 @@ const Blogs4 = () => {
                           </p>
                         </div>
                         <div className="more">
-                          <Link href={`/blog-details/blog-details-dark`}>
+                          <Link href="/blog-details/blog-details-dark">
                             Read More
                           </Link>
                         </div>
@@ -293,15 +289,15 @@ const Blogs4 = () => {
               ref={navigationNextRef}
               className="swiper-button-next swiper-nav-ctrl next-ctrl"
             >
-              <i className="fas fa-caret-up"></i>
+              <i className="fas fa-caret-up" />
             </div>
             <div
               ref={navigationPrevRef}
               className="swiper-button-prev swiper-nav-ctrl prev-ctrl"
             >
-              <i className="fas fa-caret-down"></i>
+              <i className="fas fa-caret-down" />
             </div>
-            <div className="swiper-pagination" ref={paginationRef}></div>
+            <div className="swiper-pagination" ref={paginationRef} />
           </div>
         </div>
       </div>

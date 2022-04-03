@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import cardMouseEffect from "../../common/cardMouseEffect";
-import { thumparallaxDown } from "../../common/thumparallax";
+import React from 'react';
+import cardMouseEffect from '../../common/cardMouseEffect';
+import { thumparallaxDown } from '../../common/thumparallax';
 
 const MinimalArea = () => {
   React.useEffect(() => {
-    cardMouseEffect(document.querySelectorAll(".feat .items"));
+    cardMouseEffect(document.querySelectorAll('.feat .items'));
     setTimeout(() => {
       thumparallaxDown();
     }, 1000);
@@ -33,7 +33,9 @@ const MinimalArea = () => {
               <ul className="feat">
                 <li className="wow fadeInUp" data-wow-delay=".2s">
                   <h6>
-                    <span>1</span> Our Mission
+                    <span>1</span>
+                    {' '}
+                    Our Mission
                   </h6>
                   <p>
                     luctus massa ipsum at tempus eleifend congue lectus bibendum
@@ -41,7 +43,9 @@ const MinimalArea = () => {
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".4s">
                   <h6>
-                    <span>2</span> Our Goals
+                    <span>2</span>
+                    {' '}
+                    Our Goals
                   </h6>
                   <p>
                     luctus massa ipsum at tempus eleifend congue lectus bibendum
@@ -49,7 +53,9 @@ const MinimalArea = () => {
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".6s">
                   <h6>
-                    <span>3</span> Why Us?
+                    <span>3</span>
+                    {' '}
+                    Why Us?
                   </h6>
                   <p>
                     luctus massa ipsum at tempus eleifend congue lectus bibendum
