@@ -1,5 +1,5 @@
 {
-  "name": "vie-react",
+  "name": "urban-infrastructure",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
